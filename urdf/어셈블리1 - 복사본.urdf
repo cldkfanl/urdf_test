@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="어셈블리1 - 복사본">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.11505807240274 0.0652881467782363 -0.125474366192253"
+        rpy="0 0 0" />
+      <mass
+        value="2.1954206597703" />
+      <inertia
+        ixx="0.00802020985051211"
+        ixy="-2.86442962883425E-05"
+        ixz="-0.000329601691758864"
+        iyy="0.0126483171821429"
+        iyz="-0.000175205741368237"
+        izz="0.00579888032223391" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link-front">
+    <inertial>
+      <origin
+        xyz="0.04 0.023612 -0.049877"
+        rpy="0 0 0" />
+      <mass
+        value="0.27389" />
+      <inertia
+        ixx="0.00033506"
+        ixy="2.9517E-20"
+        ixz="2.6484E-20"
+        iyy="0.00079692"
+        iyz="6.5093E-05"
+        izz="0.00055497" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/Link-front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/Link-front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front"
+    type="revolute">
+    <origin
+      xyz="-0.25413 0.259 0.030639"
+      rpy="-1.9533 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link-front" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_behind">
+    <inertial>
+      <origin
+        xyz="0.00073571 0.0024924 -0.010838"
+        rpy="0 0 0" />
+      <mass
+        value="0.12367" />
+      <inertia
+        ixx="0.00015412"
+        ixy="-4.0037E-06"
+        ixz="9.3562E-07"
+        iyy="0.00027232"
+        iyz="3.3496E-05"
+        izz="0.00038406" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link_behind.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link_behind.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="behind"
+    type="revolute">
+    <origin
+      xyz="0.031278 0.119 0.048921"
+      rpy="-2.2515 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_behind" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-wheel-left">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 1.3878E-17 0.014924"
+        rpy="0 0 0" />
+      <mass
+        value="0.44033" />
+      <inertia
+        ixx="0.00055195"
+        ixy="0"
+        ixz="2.5933E-20"
+        iyy="0.00055195"
+        iyz="1.6085E-19"
+        izz="0.0010399" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link-wheel-left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link-wheel-left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left-wheel"
+    type="continuous">
+    <origin
+      xyz="-0.0725 -0.044 0.0521"
+      rpy="-1.5708 0.15964 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link-wheel-left" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link-wheel-right">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -6.9389E-18 0.014924"
+        rpy="0 0 0" />
+      <mass
+        value="0.44033" />
+      <inertia
+        ixx="0.00055195"
+        ixy="-1.3553E-20"
+        ixz="-6.1375E-21"
+        iyy="0.00055195"
+        iyz="-2.1709E-22"
+        izz="0.0010399" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link-wheel-right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/link-wheel-right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right-wheel"
+    type="continuous">
+    <origin
+      xyz="-0.0725 0.294 0.0521"
+      rpy="1.5708 0.26474 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link-wheel-right" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="zed">
+    <inertial>
+      <origin
+        xyz="2.4562E-10 0 0.0165"
+        rpy="0 0 0" />
+      <mass
+        value="0.16688" />
+      <inertia
+        ixx="2.7222E-05"
+        ixy="-1.4229E-19"
+        ixz="5.6838E-12"
+        iyy="0.00041211"
+        iyz="-4.7478E-21"
+        izz="0.00040904" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/zed.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/zed.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="zed"
+    type="fixed">
+    <origin
+      xyz="-0.22924 0.12351 0.178"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="zed" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hokuyo">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/hokuyo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://어셈블리1 - 복사본/meshes/hokuyo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hokuyo"
+    type="fixed">
+    <origin
+      xyz="-0.135 0.125 0.204"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hokuyo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
